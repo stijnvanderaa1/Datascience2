@@ -24,6 +24,12 @@ print(b[1, 2])  # Output: 6
 
 # Laatste rij
 print(b[-1])  # Output: [7 8 9]
+
+# eerste kolom
+a[: ,0]
+
+# eerste rij
+a[0, :]
 ```
 ## 2. Slicing
 Met slicing kun je delen van een array selecteren op basis van indexen.  
