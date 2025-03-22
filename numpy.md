@@ -131,6 +131,8 @@ print(np.min(a), np.max(a))  # Output: 1 5
 
 # Standaardafwijking en variantie
 print(np.std(a), np.var(a))  # Output: 1.4142135623730951 2.0
+
+# als je per  kolom dat wit berekenen doe je bv voor de standaardafwijking np.std(a, axis=0)
 ```
 ## 5. Broadcasting
 Met broadcasting kun je arrays met verschillende afmetingen samen laten werken.  
