@@ -188,4 +188,3 @@ print(result)  # Output: [20 70]
 | **Broadcasting**   | Arrays met verschillende vormen compatibel maken   | `a + b`                       |
 | **Boolean Masking**| Selecteer elementen op basis van een voorwaarde   | `a[a > 10]`                   |
 | **Fancy Indexing** | Selecteer elementen met een lijst van indexen     | `a[[0, 2, 4]]`                |
-```
