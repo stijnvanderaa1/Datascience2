@@ -71,6 +71,13 @@ print(a[:, -1])
 # Hoekelementen (eigen selectie)
 print(a[[0, 2], [0, 2]])
 # Output: [1 9]
+
+
+`[:, :3]` → Dit is slicing waarmee alleen de eerste drie kolommen worden geselecteerd:
+
+- `:` → Neem alle rijen.  
+- `:3` → Neem alleen de eerste drie kolommen (kolomindex 0, 1 en 2).  
+
 ```
 
 ---
