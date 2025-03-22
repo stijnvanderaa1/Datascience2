@@ -97,8 +97,42 @@ print(result)  # Output: [0.84147098 0.90929743 0.14112001 -0.7568025]
 ```
 
 ---
+## 4 Aggregations
+Aggregations zijn functies die een samenvatting geven van de waarden in een array, zoals het berekenen van de som, het gemiddelde of de standaardafwijking. Ze werken vaak sneller dan het handmatig itereren door de array.
 
-## 4. Broadcasting
+### Veelgebruikte aggregatiefuncties:
+| Functie              | Beschrijving                                   | Voorbeeld                        |
+|---------------------|----------------------------------------------|----------------------------------|
+| `np.sum()`          | Som van alle elementen                        | `np.sum([1, 2, 3]) → 6`         |
+| `np.mean()`         | Gemiddelde van de elementen                   | `np.mean([1, 2, 3]) → 2.0`      |
+| `np.median()`       | Mediaan van de elementen                      | `np.median([1, 2, 3]) → 2.0`    |
+| `np.min()`          | Kleinste waarde                                | `np.min([1, 2, 3]) → 1`         |
+| `np.max()`          | Grootste waarde                                | `np.max([1, 2, 3]) → 3`         |
+| `np.std()`          | Standaardafwijking                             | `np.std([1, 2, 3]) → 0.816`     |
+| `np.var()`          | Variantie                                      | `np.var([1, 2, 3]) → 0.666`     |
+
+### Voorbeeld:
+```python
+import numpy as np
+
+a = np.array([1, 2, 3, 4, 5])
+
+# Som van de elementen
+print(np.sum(a))  # Output: 15
+
+# Gemiddelde
+print(np.mean(a))  # Output: 3.0
+
+# Mediaan
+print(np.median(a))  # Output: 3.0
+
+# Kleinste en grootste waarde
+print(np.min(a), np.max(a))  # Output: 1 5
+
+# Standaardafwijking en variantie
+print(np.std(a), np.var(a))  # Output: 1.4142135623730951 2.0
+```
+## 5. Broadcasting
 Met broadcasting kun je arrays met verschillende afmetingen samen laten werken.  
 Kleine arrays worden automatisch uitgebreid zodat de dimensies overeenkomen.
 
@@ -129,7 +163,7 @@ print(a + b)  # Output: [11 12 13]
 
 ---
 
-## 5. Boolean Masking
+## 6. Boolean Masking
 Met boolean masking kun je elementen uit een array selecteren op basis van een voorwaarde.
 
 ### Voorbeeld:
@@ -158,7 +192,7 @@ print(result)  # Output: [6 7 8 9]
 
 ---
 
-## 6. Fancy Indexing
+## 7. Fancy Indexing
 Met fancy indexing kun je specifieke rijen of kolommen uit een array selecteren op basis van een lijst met indexen.
 
 ### Voorbeeld:
